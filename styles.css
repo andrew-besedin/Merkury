@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    transition: all 0.3s;
+    border: 0;
+    z-index: 1;
+
+    --primary: rgba(85, 132, 255, 1);
+    --primary-hover: rgb(51, 102, 233);
+
+    --text-transparent: #8492AF;
+    --text-transparent-hover: #8492afb1;
+    
+    --transparent-btn-hover: #ffffff15;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #0e1a35;
+}
+
+p, a, button {
+    font-size: 18px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 59px;
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 22px;
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+button {
+    background-color: var(--primary);
+    padding: 18px 57px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+header, footer {
+    padding: 70px 160px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 4;
+}
+
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 47px;
+}
+
+.nav__wrapper > nav {
+    display: flex;
+    gap: 47px;
+}
+
+.btn__login {
+    background-color: transparent;
+    padding: 18px 45px;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    font-weight: 400;
+}
+
+.btn__login:hover {
+    background-color: var(--transparent-btn-hover);
+}
+
+.footer__text {
+    color: var(--text-transparent);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer__link {
+    color: var(--text-transparent);
+}
+
+.footer__link:hover {
+    color: var(--text-transparent-hover);
+}
+
+.home {
+    padding-top: 77px;
+    height: 900px;
+    position: relative;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    z-index: 3;
+}
+
+.home__background {
+    max-width: 100%; 
+    position: absolute;
+    transform: translateX(-50%);
+    top: -90px;
+    left: 50%;
+    z-index: 1;
+}
+
+.home__title_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.home__title {
+    color: #fff;
+}
+
+.home__subtitle {
+    color: var(--text-transparent);
+    font-weight: 400;
+}
+
+.home__image {
+    z-index: 5;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    z-index: 3;
+}
+
+.features {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.features__panel {
+    padding: 260px 265px;
+    padding-bottom: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features__item {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.features__item_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features__btn {
+    width: 253px;
+    height: 50px;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid rgba(132, 146, 175, 0.3);
+    color: #000000;
+    font-size: 14px;
+}
+
+.features__btn:hover {
+    background-color: var(--transparent-btn-hover);
+}
+
+.features__item_inner > p {
+    margin-top: 27px;
+    text-align: center;   
+    color: var(--text-transparent);
+}
+
+.features__browser {
+    padding: 260px 265px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.features__browser_text {
+    width: 577px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.features__browser_text > p {
+    color: var(--text-transparent);
+}
+
+.features__browser_pros {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.features__browser_pros > div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.features__browser_pros > div > h6 {
+    color: var(--primary);
+    font-weight: 400;
+}
+
+.features__browser_img {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: -250px;
+}
