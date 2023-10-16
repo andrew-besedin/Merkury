@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merkury</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
 </head>
 <body>
     <header>
         <img src="./public/logo.svg" alt="Merkury" />
         <div class="nav__wrapper">
             <nav>
-                <a href="/">Features</a>
-                <a href="/">Pricing</a>
-                <a href="/">Blog</a>
-                <a href="/">Contact</a>
+                <a href="./">Features</a>
+                <a href="./">Pricing</a>
+                <a href="./">Blog</a>
+                <a href="./">Contact</a>
             </nav>
             <button class="btn__login">
                 Login
@@ -35,8 +36,11 @@
         </section>
         <section class="features">
             <div class="features__panel">
+                <div class="features__delimiter"></div>
+                <div class="features__delimiter"></div>
                 <div class="features__item">
                     <div class="features__item_inner">
+                        <img src="./public/tasks_icon.svg" alt="tasks" />
                         <h5>Manage Your Workflow</h5>
                         <p class="description_text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -46,6 +50,7 @@
                 </div>
                 <div class="features__item">
                     <div class="features__item_inner">
+                        <img src="./public/chart_icon.svg" alt="chart" />
                         <h5>Analytics & Insights</h5>
                         <p class="description_text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -55,6 +60,7 @@
                 </div>
                 <div class="features__item">
                     <div class="features__item_inner">
+                        <img src="./public/calendar_icon.svg" alt="calendar" />
                         <h5>Organize Your Deadlines</h5>
                         <p class="description_text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -71,9 +77,11 @@
                 </div>
                 <div class="features__browser_pros"> 
                     <div>
+                        <i class="fa-regular fa-circle-check fa-xl"></i>
                         <h6>Lorem ipsum dolor sit amet consectetur</h6>
                     </div>
                     <div>
+                        <i class="fa-regular fa-circle-check fa-xl"></i>
                         <h6>Ut enim ad minim veniam quis nostrud</h6>
                     </div>
                 </div>
@@ -117,15 +125,19 @@
                         <p class="pricing_item__price"><span>$</span>19<span>/mon</span></p>
                         <div class="pricing_item__benifits">
                             <div>
+                                <i class="fa-regular fa-circle-check fa-xl"></i>
                                 <p>Lorem ipsum dolor sit am</p>
                             </div>
                             <div>
+                                <i class="fa-regular fa-circle-check fa-xl"></i>
                                 <p>Lorem ipsum dolor sit am</p>
                             </div>
                             <div>
+                                <i class="fa-regular fa-circle-xmark fa-xl"></i>
                                 <p>Lorem ipsum dolor sit am</p>
                             </div>
                             <div>
+                                <i class="fa-regular fa-circle-xmark fa-xl"></i>
                                 <p>Lorem ipsum dolor sit am</p>
                             </div>
                         </div>
@@ -135,15 +147,19 @@
                         <p class="pricing_item__price"><span>$</span>49<span>/mon</span></p>
                         <div class="pricing_item__benifits">
                             <div>
+                                <i class="fa-regular fa-circle-check fa-xl"></i>
                                 <p>Lorem ipsum dolor sit am</p>
                             </div>
                             <div>
+                                <i class="fa-regular fa-circle-check fa-xl"></i>
                                 <p>Lorem ipsum dolor sit am</p>
                             </div>
                             <div>
+                                <i class="fa-regular fa-circle-check fa-xl"></i>
                                 <p>Lorem ipsum dolor sit am</p>
                             </div>
                             <div>
+                                <i class="fa-regular fa-circle-xmark fa-xl"></i>
                                 <p>Lorem ipsum dolor sit am</p>
                             </div>
                         </div>
@@ -153,32 +169,51 @@
                         <p class="pricing_item__price"><span>$</span>99<span>/mon</span></p>
                         <div class="pricing_item__benifits">
                             <div>
+                                <i class="fa-regular fa-circle-check fa-xl"></i>
                                 <p>Lorem ipsum dolor sit am</p>
                             </div>
                             <div>
+                                <i class="fa-regular fa-circle-check fa-xl"></i>
                                 <p>Lorem ipsum dolor sit am</p>
                             </div>
                             <div>
+                                <i class="fa-regular fa-circle-check fa-xl"></i>
                                 <p>Lorem ipsum dolor sit am</p>
                             </div>
                             <div>
+                                <i class="fa-regular fa-circle-check fa-xl"></i>
                                 <p>Lorem ipsum dolor sit am</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <p class="description_text template__pricing_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                <button>Join now!</button>
+                <div class="template__join_btn">
+                    <div></div>
+                    <button>Join now!</button>
+                    <div></div>
+                </div>
+
             </div>
         </section>
     </main>
     <footer>
         <p class="footer__text">© 2016 Merkury All Right Reserved</p>
-        <div class="footer__links">
-            <a href="/" class="footer__link">Pricing</a>
-            <a href="/" class="footer__link">Blog</a>
-            <a href="/" class="footer__link">Contact</a>
+        <div class="footer__links__wrapper">
+            <div class="footer__links">
+                <a href="./" class="footer__link">Pricing</a>
+                <a href="./" class="footer__link">Blog</a>
+                <a href="./" class="footer__link">Contact</a>
+            </div>
+            <div class="footer__social">
+                <a href="./"><i class="fa-brands fa-google"></i></a>
+                <a href="./"><i class="fa-brands fa-facebook"></i></a>
+                <a href="./"><i class="fa-brands fa-twitter"></i></a>
+            </div>
         </div>
+        
     </footer>
+
+    <script src="https://kit.fontawesome.com/a46803d433.js" crossorigin="anonymous"></script>
 </body>
 </html>

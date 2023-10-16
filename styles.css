@@ -11,10 +11,14 @@
     --primary: rgba(85, 132, 255, 1);
     --primary-hover: rgb(51, 102, 233);
 
+    --error: #F95A90;
+
     --text-transparent: #8492AF;
     --text-transparent-hover: #8492afb1;
     
     --transparent-btn-hover: #ffffff15;
+
+    --delimiter: rgba(132, 146, 175, 0.3);
 }
 
 body {
@@ -22,6 +26,10 @@ body {
     max-width: 2000px;
     min-height: 100vh;
     background-color: #0e1a35;
+}
+
+i {
+    transition: none;
 }
 
 p, a, button {
@@ -115,12 +123,23 @@ header, footer {
     gap: 50px;
 }
 
-.footer__link {
+.footer__link, .footer__social i {
     color: var(--text-transparent);
 }
 
-.footer__link:hover {
+.footer__link:hover, .footer__social i:hover {
     color: var(--text-transparent-hover);
+}
+
+.footer__links__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 20px;
 }
 
 .home {
@@ -167,6 +186,7 @@ header, footer {
     top: 400px;
     left: 50%;
     z-index: 3;
+    box-shadow: 0px 0px 40px 0px rgba(52, 137, 255, 0.293);
 }
 
 .features {
@@ -181,6 +201,7 @@ header, footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .features__item {
@@ -195,6 +216,29 @@ header, footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.features__item_inner > img {
+    margin-bottom: 55px;
+    height: 90px;
+}
+
+.features__delimiter {
+    height: 1px;
+    width: 220px;
+    background-color: var(--delimiter);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: calc(50% - 100px);
+    left: 50%;
+}
+
+.features__delimiter:first-child {
+    left: calc(50% - 250px);
+}
+
+.features__delimiter:not(:first-child) {
+    left: calc(50% + 250px);
 }
 
 .features__btn {
@@ -248,6 +292,12 @@ header, footer {
 .features__browser_pros > div > h6 {
     color: var(--primary);
     font-weight: 400;
+}
+
+.features__browser_pros > div > i {
+    /* height: 28px;
+    width: 28px; */
+    color: var(--primary);
 }
 
 .features__browser_img {
@@ -397,7 +447,35 @@ header, footer {
     color: var(--text-transparent);
 }
 
+.pricing_item__benifits > div {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.pricing_item__benifits > div > i {
+    color: var(--primary);
+}
+
+.pricing_item__benifits > div > i.fa-circle-xmark {
+    color: var(--error);
+}
+
+
 .template__pricing_text {
+    margin-bottom: 65px;
     max-width: 900px;
     text-align: center;
+}
+
+.template__join_btn {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.template__join_btn > div {
+    height: 1px;
+    width: 230px;
+    background-color: var(--delimiter);
 }
