@@ -41,7 +41,7 @@ a {
     text-decoration: none;
 }
 
-h1 {
+h2 {
     font-size: 59px;
     font-weight: 200;
 }
@@ -335,7 +335,7 @@ header, footer {
     gap: 50px;
 }
 
-.tasks__text_wrapper > h1 {
+.tasks__text_wrapper > h2 {
     color: #ffffff;
 }
 
@@ -372,6 +372,8 @@ header, footer {
 .template {
     padding: 105px 318px;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
 }
 
 .template__title {
