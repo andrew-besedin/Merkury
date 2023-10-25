@@ -192,13 +192,14 @@ header, footer {
 .features {
     background-color: #ffffff;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
 .features__panel {
-    padding: 260px 265px;
+    width: 1470px;
+    padding: 260px 0;
     padding-bottom: 150px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -260,8 +261,16 @@ header, footer {
     text-align: center;   
 }
 
+.features__browser_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
 .features__browser {
-    padding: 260px 265px;
+    width: 1470px;
+    padding: 260px 0;
     padding-top: 150px;
     display: flex;
     flex-direction: column;
@@ -295,8 +304,6 @@ header, footer {
 }
 
 .features__browser_pros > div > i {
-    /* height: 28px;
-    width: 28px; */
     color: var(--primary);
 }
 
@@ -308,12 +315,15 @@ header, footer {
 }
 
 .tasks {
-    padding: 122px 146px;
+    padding: 122px 0;
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
     gap: 177px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tasks__background {
@@ -369,11 +379,18 @@ header, footer {
     transform: rotate(180deg);    
 }
 
-.template {
-    padding: 105px 318px;
+.template__wrapper {
+    padding: 105px 0;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.template {
+    width: 1470px;
 }
 
 .template__title {
